@@ -4,6 +4,8 @@ namespace Jaroszek.ProofOfConcept.CRUD
 {
     public class Person
     {
+
+
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
@@ -13,5 +15,7 @@ namespace Jaroszek.ProofOfConcept.CRUD
         public string City { get; set; }
         public DateTime AddDate { get; set; }
         public string Description { get; set; }
+
+
     }
 }
