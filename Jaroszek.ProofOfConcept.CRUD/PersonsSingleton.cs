@@ -69,12 +69,12 @@ namespace Jaroszek.ProofOfConcept.CRUD
             if (result != null)
             {
                 result.Name = person.Name;
-                result.Surname = "Kowalski";
-                result.Street = "Warszawska";
-                result.Number = "15";
-                result.PostalCode = "21-020";
-                result.City = "Lublin";
-                result.AddDate = DateTime.Now;
+                result.Surname = person.Surname;
+                result.Street = person.Street;
+                result.Number = person.Number;
+                result.PostalCode = person.PostalCode;
+                result.City = person.City;
+                result.AddDate = person.AddDate;
                 result.Description = person.Description;
             }
 
