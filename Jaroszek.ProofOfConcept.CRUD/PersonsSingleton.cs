@@ -65,7 +65,7 @@ namespace Jaroszek.ProofOfConcept.CRUD
 
         public void Update(Person person)
         {
-            var result = Persons.FirstOrDefault(p => p.Name == person.Name);
+            var result = Persons.Single(p => p.Name == person.Name);
             if (result != null)
             {
                 result.Name = person.Name;
