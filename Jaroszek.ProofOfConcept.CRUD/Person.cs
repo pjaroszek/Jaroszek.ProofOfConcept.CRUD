@@ -1,4 +1,6 @@
-﻿namespace Jaroszek.ProofOfConcept.CRUD
+﻿using System;
+
+namespace Jaroszek.ProofOfConcept.CRUD
 {
     public class Person
     {
@@ -9,6 +11,7 @@
         public string Number { get; set; }
         public string PostalCode { get; set; }
         public string City { get; set; }
+        public DateTime AddDate { get; set; }
         public string Description { get; set; }
     }
 }
