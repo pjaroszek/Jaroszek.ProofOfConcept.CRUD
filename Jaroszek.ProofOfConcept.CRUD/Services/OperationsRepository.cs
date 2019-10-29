@@ -23,6 +23,24 @@
 
         }
 
+        public void Insert(string Name, string Description)
+        {
+            Person person = new Person();
+
+            person.Id = 1;
+            person.Name = Name;
+            person.Surname = "Nowak";
+            person.Street = "Rejtana";
+            person.Number = "19";
+            person.PostalCode = "35-103";
+            person.City = "Rzeszów";
+            person.AddDate = DateTime.Now;
+            person.Description = Description;
+
+            PersonsSingleton.Instance.Insert(person);
+
+        }
+
         public void Update(string name, string description)
         {
 
