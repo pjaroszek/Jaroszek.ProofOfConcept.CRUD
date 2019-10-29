@@ -26,7 +26,9 @@ namespace Jaroszek.ProofOfConcept.CRUD
                 personDtoUpdate.Name = "Michala";
                 personDtoUpdate.Description = "zmienił preferencje, zamawia w południe";
 
-                crud.Update(personDtoUpdate);
+               // crud.Update(personDtoUpdate);
+
+                crud.Update("Michal", "Zamawia w piątek a chce dostawę w sobotę..");
 
                 crud.Remove(2);
 

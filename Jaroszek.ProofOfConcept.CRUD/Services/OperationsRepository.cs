@@ -23,6 +23,24 @@
 
         }
 
+        public void Update(string name, string description)
+        {
+
+
+            Person person = new Person();
+            person.Name = name;
+            person.Surname = "Kowalski";
+            person.Street = "Warszawska";
+            person.Number = "15";
+            person.PostalCode = "21-020";
+            person.City = "Lublin";
+            person.AddDate = DateTime.Now;
+            person.Description = description;
+
+            PersonsSingleton.Instance.Update(person);
+
+        }
+
         public void Update(PersonDto personDto)
         {
 
