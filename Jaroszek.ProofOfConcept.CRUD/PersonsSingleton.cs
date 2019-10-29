@@ -57,6 +57,11 @@ namespace Jaroszek.ProofOfConcept.CRUD
             Persons.Add(person);
         }
 
+        public void Insert(string Name, string Description)
+        {
+            Person person = new Person();
+            Persons.Add(person);
+        }
 
         public void Insert(Person person)
         {
