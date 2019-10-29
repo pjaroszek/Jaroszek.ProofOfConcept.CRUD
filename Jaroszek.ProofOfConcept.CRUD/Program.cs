@@ -21,12 +21,14 @@ namespace Jaroszek.ProofOfConcept.CRUD
                 IOperationsRepository crud = new OperationsRepository();
                 crud.Insert(personDto);
 
+                crud.Insert("Kornel", "Marlenka");
+
 
                 PersonDto personDtoUpdate = new PersonDto();
                 personDtoUpdate.Name = "Michala";
                 personDtoUpdate.Description = "zmienił preferencje, zamawia w południe";
 
-               // crud.Update(personDtoUpdate);
+                // crud.Update(personDtoUpdate);
 
                 crud.Update("Michal", "Zamawia w piątek a chce dostawę w sobotę..");
 
