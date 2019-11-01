@@ -14,23 +14,23 @@ namespace Jaroszek.ProofOfConcept.CRUD
 
                 var personClassToCheckValue = PersonsSingleton.Instance;
 
-                PersonDto personDto = new PersonDto();
-                personDto.Name = "Michal";
-                personDto.Description = "zazwyczaj zamawia rano";
+               // PersonDto personDto = new PersonDto();
+               // personDto.Name = "Michal";
+               //personDto.Description = "zazwyczaj zamawia rano";
 
                 IOperationsRepository crud = new OperationsRepository();
-                crud.Insert(personDto);
+               // crud.Insert(personDto);
 
                 crud.Insert("Kornel", "Marlenka");
 
 
-                PersonDto personDtoUpdate = new PersonDto();
-                personDtoUpdate.Name = "Michala";
-                personDtoUpdate.Description = "zmienił preferencje, zamawia w południe";
+               // PersonDto personDtoUpdate = new PersonDto();
+               // personDtoUpdate.Name = "Michala";
+               // personDtoUpdate.Description = "zmienił preferencje, zamawia w południe";
 
                 // crud.Update(personDtoUpdate);
 
-                crud.Update("Michal", "Zamawia w piątek a chce dostawę w sobotę..");
+                crud.Update("Kornel", "Zamawia w piątek a chce dostawę w sobotę..");
 
                 crud.Remove(2);
 
