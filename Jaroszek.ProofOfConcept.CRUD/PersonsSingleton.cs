@@ -93,5 +93,16 @@ namespace Jaroszek.ProofOfConcept.CRUD
                 Persons.Remove(remove);
         }
 
+
+        public List<Person> GetAll()
+        {
+            return Persons.ToList();
+        }
+
+        public Person FindByName(string Name)
+        {
+            return Persons.Single(p => p.Name == Name);
+        }
+
     }
 }

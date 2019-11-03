@@ -14,26 +14,19 @@ namespace Jaroszek.ProofOfConcept.CRUD
 
                 var personClassToCheckValue = PersonsSingleton.Instance;
 
-               // PersonDto personDto = new PersonDto();
-               // personDto.Name = "Michal";
-               //personDto.Description = "zazwyczaj zamawia rano";
+               
+                IOperationsRepositoryCommand crudCommand = new OperationsRepositoryCommand();
 
-                IOperationsRepository crud = new OperationsRepository();
-               // crud.Insert(personDto);
+                crudCommand.Insert("Kornel", "Marlenka");
 
-                crud.Insert("Kornel", "Marlenka");
+                crudCommand.Update("Kornel", "Zamawia w piątek a chce dostawę w sobotę..");
 
+                crudCommand.Remove(2);
 
-               // PersonDto personDtoUpdate = new PersonDto();
-               // personDtoUpdate.Name = "Michala";
-               // personDtoUpdate.Description = "zmienił preferencje, zamawia w południe";
-
-                // crud.Update(personDtoUpdate);
-
-                crud.Update("Kornel", "Zamawia w piątek a chce dostawę w sobotę..");
-
-                crud.Remove(2);
-
+                IOperationsRepositoryQuery crudQuery = new OperationsRepositoryQuery();
+                var result = crudQuery.GetAll();
+                var resultName = crudQuery.FindByName("Kornel");
+                
             }
             catch (InvalidOperationException operationException)
             {

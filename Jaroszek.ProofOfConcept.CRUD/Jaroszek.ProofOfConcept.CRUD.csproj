@@ -44,13 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interfaces\IOperationsRepositoryQuery.cs" />
     <Compile Include="Models\PersonDto.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="PersonsSingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\OperationsRepository.cs" />
-    <Compile Include="Interfaces\IOperationsRepository.cs" />
+    <Compile Include="Services\OperationsRepositoryCommand.cs" />
+    <Compile Include="Interfaces\IOperationsRepositoryCommand.cs" />
+    <Compile Include="Services\OperationsRepositoryQuery.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
