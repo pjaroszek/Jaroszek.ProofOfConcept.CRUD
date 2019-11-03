@@ -1,4 +1,6 @@
-﻿namespace Jaroszek.ProofOfConcept.CRUD.Interfaces
+﻿using Jaroszek.ProofOfConcept.CRUD.Models;
+
+namespace Jaroszek.ProofOfConcept.CRUD.Interfaces
 {
     public interface IOperationsRepository
     {

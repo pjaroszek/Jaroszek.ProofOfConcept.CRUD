@@ -1,4 +1,6 @@
-﻿namespace Jaroszek.ProofOfConcept.CRUD.Services
+﻿using Jaroszek.ProofOfConcept.CRUD.Models;
+
+namespace Jaroszek.ProofOfConcept.CRUD.Services
 {
     using Jaroszek.ProofOfConcept.CRUD.Interfaces;
     using System;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jaroszek.ProofOfConcept.CRUD.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
