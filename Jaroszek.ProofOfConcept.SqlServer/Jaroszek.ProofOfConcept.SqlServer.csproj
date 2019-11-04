@@ -4,18 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{619DF337-2AC4-4BC4-AD98-E0863ECDB90A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Jaroszek.ProofOfConcept.CRUD</RootNamespace>
-    <AssemblyName>Jaroszek.ProofOfConcept.CRUD</AssemblyName>
+    <ProjectGuid>{4B9D6986-BB7B-4D52-8370-F3A78D9760E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jaroszek.ProofOfConcept.SqlServer</RootNamespace>
+    <AssemblyName>Jaroszek.ProofOfConcept.SqlServer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +24,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,19 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IOperationsRepositoryQuery.cs" />
-    <Compile Include="Models\PersonDto.cs" />
-    <Compile Include="Models\Person.cs" />
-    <Compile Include="PersonsSingleton.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Interfaces\IPersonRepositoryCommand.cs" />
+    <Compile Include="Interfaces\IPersonRepositoryQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\OperationsRepositoryCommand.cs" />
-    <Compile Include="Interfaces\IOperationsRepositoryCommand.cs" />
-    <Compile Include="Services\OperationsRepositoryQuery.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="Services\OperationRepositorySQL.cs" />
+    <Compile Include="Services\OperationRepositorySqlCommand.cs" />
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.DataAccess.csproj">
+      <Project>{27f0a207-951d-4313-9221-f06c463174bb}</Project>
+      <Name>Jaroszek.ProofOfConcept.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
