@@ -1,10 +1,10 @@
-﻿using Jaroszek.ProofOfConcept.DataAccess.Models;
-using Jaroszek.ProofOfConcept.MySql.Interfaces;
+﻿using Jaroszek.ProofOfConcept.DataAccess.Interfaces;
+using Jaroszek.ProofOfConcept.DataAccess.Models;
 using System.Collections.Generic;
 
 namespace Jaroszek.ProofOfConcept.MySql.Services
 {
-    public class OperationsRepositoryMySql : IPersonRepositoryCommand, IPersonRepositoryQuery
+    public class OperationsRepositoryMySql : IDataAccessCommand, IDataAccessQuery
     {
         public void AddNew(PersonDto person)
         {

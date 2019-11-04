@@ -41,8 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IPersonRepositoryCommand.cs" />
-    <Compile Include="Interfaces\IPersonRepositoryQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\OperationsRepositoryMySql.cs" />
   </ItemGroup>

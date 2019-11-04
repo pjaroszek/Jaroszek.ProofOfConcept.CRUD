@@ -1,12 +1,12 @@
-﻿using Jaroszek.ProofOfConcept.DataAccess.Models;
-using Jaroszek.ProofOfConcept.SqlServer.Interfaces;
+﻿using Jaroszek.ProofOfConcept.DataAccess.Interfaces;
+using Jaroszek.ProofOfConcept.DataAccess.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Jaroszek.ProofOfConcept.SqlServer.Services
 {
-    public class OperationRepositorySqlCommand : IPersonRepositoryCommand
+    public class OperationRepositorySqlCommand : IDataAccessCommand
     {
         private List<Person> _persons = new List<Person>();
 
