@@ -44,10 +44,9 @@
     <Compile Include="Interfaces\IPersonRepositoryCommand.cs" />
     <Compile Include="Interfaces\IPersonRepositoryQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\OperationsRepositoryMySql.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.DataAccess.csproj">
       <Project>{27f0a207-951d-4313-9221-f06c463174bb}</Project>
