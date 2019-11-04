@@ -2,8 +2,7 @@
 
 namespace Jaroszek.ProofOfConcept.SqlServer.Interfaces
 {
-
-    public interface IPersonRepository : IDataAccess
+    public interface IPersonRepositoryCommand : IDataAccessCommand
     {
 
     }

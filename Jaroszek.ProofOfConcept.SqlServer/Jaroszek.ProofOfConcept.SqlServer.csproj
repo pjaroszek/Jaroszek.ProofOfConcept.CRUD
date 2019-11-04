@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IPersonRepository.cs" />
+    <Compile Include="Interfaces\IPersonRepositoryCommand.cs" />
+    <Compile Include="Interfaces\IPersonRepositoryQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\OperationRepositorySQL.cs" />
+    <Compile Include="Services\OperationRepositorySqlCommand.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

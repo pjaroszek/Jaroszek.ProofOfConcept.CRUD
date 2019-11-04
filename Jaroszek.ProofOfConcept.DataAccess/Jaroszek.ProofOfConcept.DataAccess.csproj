@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IDataAccess.cs" />
+    <Compile Include="Interfaces\IDataAccessQuery.cs" />
+    <Compile Include="Interfaces\IDataAccessCommand.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
