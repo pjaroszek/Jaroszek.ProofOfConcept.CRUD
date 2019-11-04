@@ -1,5 +1,6 @@
-﻿using Jaroszek.ProofOfConcept.CRUD.Interfaces;
-using Jaroszek.ProofOfConcept.CRUD.Services;
+﻿using Jaroszek.ProofOfConcept.DataAccess.Interfaces;
+using Jaroszek.ProofOfConcept.DataAccess.Models;
+using Jaroszek.ProofOfConcept.SqlServer.Services;
 using System;
 
 namespace Jaroszek.ProofOfConcept.CRUD
@@ -10,23 +11,40 @@ namespace Jaroszek.ProofOfConcept.CRUD
         {
             try
             {
-                PersonsSingleton.Instance.InitialDb();
 
-                var personClassToCheckValue = PersonsSingleton.Instance;
 
-               
-                IOperationsRepositoryCommand crudCommand = new OperationsRepositoryCommand();
+                DataAccess.Models.PersonDto person = new PersonDto();
+                person.Name = "Kornel";
+                person.Description = "Marlenka";
 
-                crudCommand.Insert("Kornel", "Marlenka");
+                IDataAccessCommand dataSqlCommand = new OperationRepositorySqlCommand();
+                dataSqlCommand.AddNew(person);
 
-                crudCommand.Update("Kornel", "Zamawia w piątek a chce dostawę w sobotę..");
 
-                crudCommand.Remove(2);
 
-                IOperationsRepositoryQuery crudQuery = new OperationsRepositoryQuery();
-                var result = crudQuery.GetAll();
-                var resultName = crudQuery.FindByName("Kornel");
-                
+
+
+                IDataAccessQuery dataAccessQuery = new OperationRepositorySql();
+                var result = dataAccessQuery.GetAll();
+
+
+                //                PersonsSingleton.Instance.InitialDb();
+                //
+                //                var personClassToCheckValue = PersonsSingleton.Instance;
+                //
+                //               
+                //                IOperationsRepositoryCommand crudCommand = new OperationsRepositoryCommand();
+                //
+                //                crudCommand.Insert("Kornel", "Marlenka");
+                //
+                //                crudCommand.Update("Kornel", "Zamawia w piątek a chce dostawę w sobotę..");
+                //
+                //                crudCommand.Remove(2);
+                //
+                //                IOperationsRepositoryQuery crudQuery = new OperationsRepositoryQuery();
+                //                var result = crudQuery.GetAll();
+                //                var resultName = crudQuery.FindByName("Kornel");
+
             }
             catch (InvalidOperationException operationException)
             {

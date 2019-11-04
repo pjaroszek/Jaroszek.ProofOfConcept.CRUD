@@ -57,6 +57,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.DataAccess.csproj">
+      <Project>{27f0a207-951d-4313-9221-f06c463174bb}</Project>
+      <Name>Jaroszek.ProofOfConcept.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jaroszek.ProofOfConcept.MySql\Jaroszek.ProofOfConcept.MySql.csproj">
+      <Project>{051164b9-8cc7-4ef4-bc15-95935a6e581a}</Project>
+      <Name>Jaroszek.ProofOfConcept.MySql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jaroszek.ProofOfConcept.SqlServer\Jaroszek.ProofOfConcept.SqlServer.csproj">
+      <Project>{4b9d6986-bb7b-4d52-8370-f3a78d9760e8}</Project>
+      <Name>Jaroszek.ProofOfConcept.SqlServer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
