@@ -58,9 +58,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.DataAccess.csproj">
+    <ProjectReference Include="..\Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.Infrastructure.csproj">
       <Project>{27f0a207-951d-4313-9221-f06c463174bb}</Project>
-      <Name>Jaroszek.ProofOfConcept.DataAccess</Name>
+      <Name>Jaroszek.ProofOfConcept.Infrastructure</Name>
     </ProjectReference>
     <ProjectReference Include="..\Jaroszek.ProofOfConcept.MySql\Jaroszek.ProofOfConcept.MySql.csproj">
       <Project>{051164b9-8cc7-4ef4-bc15-95935a6e581a}</Project>

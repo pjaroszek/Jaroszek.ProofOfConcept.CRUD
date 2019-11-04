@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaroszek.ProofOfConcept.CRUD", "Jaroszek.ProofOfConcept.CRUD\Jaroszek.ProofOfConcept.CRUD.csproj", "{619DF337-2AC4-4BC4-AD98-E0863ECDB90A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaroszek.ProofOfConcept.DataAccess", "Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.DataAccess.csproj", "{27F0A207-951D-4313-9221-F06C463174BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaroszek.ProofOfConcept.Infrastructure", "Jaroszek.ProofOfConcept.DataAccess\Jaroszek.ProofOfConcept.Infrastructure.csproj", "{27F0A207-951D-4313-9221-F06C463174BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaroszek.ProofOfConcept.SqlServer", "Jaroszek.ProofOfConcept.SqlServer\Jaroszek.ProofOfConcept.SqlServer.csproj", "{4B9D6986-BB7B-4D52-8370-F3A78D9760E8}"
 EndProject
