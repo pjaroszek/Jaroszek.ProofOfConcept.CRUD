@@ -1,8 +1,10 @@
-﻿namespace Jaroszek.ProofOfConcept.DataAccess.Interfaces
+﻿using Jaroszek.ProofOfConcept.DataAccess.Models;
+using System.Collections.Generic;
+
+namespace Jaroszek.ProofOfConcept.DataAccess.Interfaces
 {
-    using Jaroszek.ProofOfConcept.DataAccess.Models;
-    using System.Collections.Generic;
-    interface IDataAccess
+
+    public interface IDataAccess
     {
         List<Person> GetAll();
         Person GetByName(string name);
